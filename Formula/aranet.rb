@@ -11,38 +11,38 @@
 class Aranet < Formula
   desc "CLI and GUI for Aranet environmental sensors (CO2, radon, temperature, humidity)"
   homepage "https://github.com/cameronrye/aranet"
-  version "0.1.9"
+  version "0.1.11"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/cameronrye/aranet/releases/download/v0.1.9/aranet-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "1d164335db782676bad588d08200b7855ca90d7779738a77d174d8674b7f90a9"
+      url "https://github.com/cameronrye/aranet/releases/download/v0.1.11/aranet-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "2bf55026dc6f88e6cc93bebc188421eb90b8c68694926e683828351ec9775fec"
 
       resource "gui" do
-        url "https://github.com/cameronrye/aranet/releases/download/v0.1.9/aranet-gui-aarch64-apple-darwin.tar.xz"
-        sha256 "0ece339bf322f053e4693baeeda3e0bd62dd6495116e1e359542fb7270bb72d7"
+        url "https://github.com/cameronrye/aranet/releases/download/v0.1.11/aranet-gui-aarch64-apple-darwin.tar.xz"
+        sha256 "8f7f421b2a61312dea74eee573e32ea5072c06b42a78ab2f1bebc59e3cdaa19b"
       end
     end
     on_intel do
-      url "https://github.com/cameronrye/aranet/releases/download/v0.1.9/aranet-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "7cb9339e17084454dba9c39c3bee5f26c26f7fca544cc85bb6fba2bf57194552"
+      url "https://github.com/cameronrye/aranet/releases/download/v0.1.11/aranet-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "0bc12126824dc303bcc0358f2eac7b5e3eb284c1745c64602b64fd71550290ad"
 
       resource "gui" do
-        url "https://github.com/cameronrye/aranet/releases/download/v0.1.9/aranet-gui-x86_64-apple-darwin.tar.xz"
-        sha256 "7c0b0b9f09150b62088aaedf268cb5ee0bfc13eddd37b19d41faf0e411d58340"
+        url "https://github.com/cameronrye/aranet/releases/download/v0.1.11/aranet-gui-x86_64-apple-darwin.tar.xz"
+        sha256 "095f1b45f369fe15c8e1e61ba64baa432e7f314ccaa308e35eba73fd24a431a7"
       end
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cameronrye/aranet/releases/download/v0.1.9/aranet-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f0d6bfc0c72850f6931338cf2903960338d9649b4e775ff2d607a8a2113c14a3"
+      url "https://github.com/cameronrye/aranet/releases/download/v0.1.11/aranet-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "03bb0dad0a849e9df957d2221d770b24b308687f30f82a5b3fe2c4881827d708"
 
       resource "gui" do
-        url "https://github.com/cameronrye/aranet/releases/download/v0.1.9/aranet-gui-x86_64-unknown-linux-gnu.tar.xz"
-        sha256 "007613b3a722a7ff9ab82b2c416533ace93fce616b6c14ef31d5490aee82e9b7"
+        url "https://github.com/cameronrye/aranet/releases/download/v0.1.11/aranet-gui-x86_64-unknown-linux-gnu.tar.xz"
+        sha256 "973b4163e8e821c08767afacf34a2fb44363aa3dcf682ea8375478c160f9bcce"
       end
     end
   end
