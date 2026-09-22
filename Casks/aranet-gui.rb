@@ -9,11 +9,10 @@
 
 cask "aranet-gui" do
   arch arm: "aarch64-apple-darwin", intel: "x86_64-apple-darwin"
-  sha_arm = "a792a78787cbdb8b11ae5ff140cb911955abcc95eb7655c798127b18ea2761a6"
-  sha_intel = "f3dd527a008fadb22e3e150707a93eac2c9f419c35f2860a2d74a6d57caadddc"
 
   version "0.2.0"
-  sha256 arm: sha_arm, intel: sha_intel
+  sha256 arm:   "a792a78787cbdb8b11ae5ff140cb911955abcc95eb7655c798127b18ea2761a6",
+         intel: "f3dd527a008fadb22e3e150707a93eac2c9f419c35f2860a2d74a6d57caadddc"
 
   url "https://github.com/cameronrye/aranet/releases/download/v#{version}/Aranet-#{arch}.dmg"
   name "Aranet"
@@ -25,7 +24,7 @@ cask "aranet-gui" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :big_sur"
+  depends_on :macos
 
   app "Aranet.app"
 
@@ -46,4 +45,3 @@ cask "aranet-gui" do
       brew install cameronrye/aranet/aranet
   EOS
 end
-
