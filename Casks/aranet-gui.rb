@@ -10,9 +10,9 @@
 cask "aranet-gui" do
   arch arm: "aarch64-apple-darwin", intel: "x86_64-apple-darwin"
 
-  version "0.2.0"
-  sha256 arm:   "a792a78787cbdb8b11ae5ff140cb911955abcc95eb7655c798127b18ea2761a6",
-         intel: "f3dd527a008fadb22e3e150707a93eac2c9f419c35f2860a2d74a6d57caadddc"
+  version "0.2.1"
+  sha256 arm:   "cd9ba34e311646922cd680a6739b0ed42cab1a112fe70a9c0240c6a810e2e6b3",
+         intel: "9d837f20eb617f3eccf97084c9720ce2ac2343b4693bef4fd3203507865684d2"
 
   url "https://github.com/cameronrye/aranet/releases/download/v#{version}/Aranet-#{arch}.dmg"
   name "Aranet"
